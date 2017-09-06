@@ -1,0 +1,8 @@
+[Match]
+Name=eth0
+
+[Network]
+Address=${IP_ADDRESS}
+Gateway=${IP_GW}
+DNS=${IP_DNS1}
+DNS=${IP_DNS2}
