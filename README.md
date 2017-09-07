@@ -26,6 +26,19 @@ to either run `systemctl enable preloadBootstrap.service` or manually make a sym
 Note that this runs *before the network starts* which is necessary so that it can change your
 network configuration.
 
+You can download [our version of the image here](https://newcloud.zzt.net/index.php/s/ywuN1njs31y8alN).
+It was built using the following method:
+
+* Started with the 1.5rc2 hamvoip RPi 2-3 allstar image from https://hamvoip.org
+* Updated all system packages on Sep 5, 2017
+* Installed ser2net (we use to allow remote programming of our repeaters)
+* Installed the allstar_bootstrap script
+* Restored to original "first time" state so it will act like a normal image if you don't bootstrap it
+* Created a 4GB image from the resulting system.
+
+We make no promises how long we'll keep that up =] We hope eventually the hamvoip guys will incorporate
+this into the project, but we'll see.
+
 Usage
 -----
 
